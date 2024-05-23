@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUBELIGHT</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+        }
+        header {
+            background-color: #1a1a1a;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+        }
+        .hero h2 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .movie-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .movie {
+            background-color: #1a1a1a;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .movie:hover {
+            transform: scale(1.05);
+        }
+        .movie img {
+            width: 100%;
+            height: auto;
+        }
+        .movie-info {
+            padding: 10px;
+            text-align: center;
+        }
+        .movie-info h3 {
+            margin: 10px 0 5px;
+            font-size: 1.2em;
+        }
+        .movie-info p {
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+        footer {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+            color: #757575;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MovieStream</h1>
+    </header>
+    <section class="hero">
+        <div>
+            <h2>Featured Movie</h2>
+            <p>Watch the latest blockbuster now</p>
+        </div>
+    </section>
+    <section class="movie-grid">
+        <div class="movie">
+            <a href="https://raw9k-ai.github.io/Gardenofwords/">
+                <img src="https://play-lh.googleusercontent.com/I2BD6dScP_Lg44iVGh3UTABPPTrikrYFA5hV6K-x3IKxTFmfZKywAVgnXxxlJU_nX7LLJw" alt="Movie 1">
+            </a>
+            <div class="movie-info">
+                <h3>GARDEN OF WORDS</h3>
+                <p>Romance/Drama | 2013</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        &copy; 2024 MovieStream. All rights reserved.
+    </footer>
+</body>
+</html>
